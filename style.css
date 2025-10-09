@@ -3,3 +3,28 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+body {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.main-container  {
+    border: 3px solid rgb(0, 0, 0);   
+    width: 50%;
+
+}
+
+.titulo {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(255, 0, 0);
+}
+
+.descricao {
+    padding-top: 1%;
+    padding-bottom: 2%;
+    width: 60%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

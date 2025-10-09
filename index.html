@@ -12,8 +12,9 @@
 
     <main class="main-container">
 
-        <h1>Catálogo de Inputs HTML</h1>
-        <p>Um formulário de exemplo para demonstrar os diferentes tipos de inputs e seus atributos.</p>
+        <h1 class="titulo">Catálogo de Inputs HTML</h1>
+        <p class="descricao">Um formulário de exemplo para demonstrar os diferentes tipos de inputs e seus atributos.
+        </p>
 
         <!-- Indica que será um formulário de envio de dados (servidor) -->
         <form class="input-catalog-form">
@@ -37,7 +38,7 @@
 
                     <label for="senha" class="form-label">Senha:</label>
                     <input type="password" id="senha" name="senha" class="form-input"
-                        placeholder="Mínimo de 8 caracteres" required minlength="8">
+                        placeholder="Mínimo de 8 caracteres" required minlength="8" />
 
                     <label for="email" class="form-label">E-mail:</label>
                     <input type="email" id="email" name="email" class="form-input" placeholder="exemplo@dominio.com"
@@ -72,54 +73,97 @@
                     <!-----------------------Opções------------------------>
                     <p class="check-box">Quais tecnologias você conhece?</p>
                     <div class="form-check">
-                        <input checked type="checkbox" name="tecnologia" id="HTML" value="html">
-                        <label for="html">HTML</label>
+                        <input checked type="checkbox" name="tecnologia" id="html" value="html" class="form-input" />
+                        <label for="html" class="form-label">HTML</label>
                     </div>
                     <div class="form-check">
-                        <input type="checkbox" name="tecnologia" id="CSS" value="css">
-                        <label for="css">CSS</label>
+                        <input type="checkbox" name="tecnologia" id="css" value="css" class="form-input" />
+                        <label for="css" class="form-label">CSS</label>
                     </div>
                     <div class="form-check">
-                        <input type="checkbox" name="tecnologia" id="JS" value="js">
-                        <label for="JS">JS</label>
+                        <input type="checkbox" name="tecnologia" id="javascript" value="javascript" class="form-input" />
+                        <label for="javascript" class="form-label">JavaScript</label>
                     </div>
 
 
                     <p class="check-box"> Qual seu nivel de experiencia?</p>
 
-                    <div class="formcheck">
-                        <input type="radio" name="experiencia" id="Iniciante">
-                        <label for="Iniciante">Iniciante</label>
+                    <div class="form-check">
+                        <input type="radio" name="experiencia" id="Iniciante" class="form-input" />
+                        <label for="Iniciante" class="form-label">Iniciante</label>
                     </div>
 
-                    <div class="formcheck">
-                        <input type="radio" name="experiencia" id="Intermediario">
-                        <label for="Intermediario">Intermediário</label>
+                    <div class="form-check">
+                        <input type="radio" name="experiencia" id="Intermediario" class="form-input" />
+                        <label for="Intermediario" class="form-label">Intermediário</label>
                     </div>
 
-                    <div class="formcheck">
-                        <input type="radio" name="experiencia" id="Avancado">
-                        <label for="Avancado">Avançado</label>
+                    <div class="form-check">
+                        <input type="radio" name="experiencia" id="Avancado" class="form-input" />
+                        <label for="Avancado" class="form-label">Avançado</label>
                     </div>
 
                 </fieldset>
             </section>
 
+            <!-- Valores numericos -->
+            <section class="form-section">
+                <fieldset class="form-group">
+                    <div class="form-number">
+                        <legend class="form-group-title">Valores Numéricos</legend>
+                        <input type="number" name="idade" id="idade" class="form-input" min="18" max="120" step="1"
+                            value="18" />
+                        <label for="idade" class="form-label">Idade</label>
+                    </div>
+                    <div class="form-range">
+                        <label class="form-label" for="satisfacao">Satisfação:</label>
+                        <input type="range" name="satisfacao" id="satisfacao" class="form-input" min="0" max="100"
+                            step="10" value="50" />
+                    </div>
+                </fieldset>
+            </section>
+
+
+            <!-- Datas e horas -->
+            <section class="form-section">
+                <fieldset class="form-group">
+                    <legend class="form-group-title">Datas e Horas</legend>
+
+                    <label for="data-nascimento" class="form-label">Data de nascimento:</label>
+                    <input type="date" name="data-nascimento" id="data-nascimento" class="form-input" />
+
+                    <label for="hora-evento" class="form-label">Hora do Evento</label>
+                    <input type="time" name="hora-evento" id="hora-evento" class="form-input" />
+
+                    <label for="reuniao" class="form-label">Data e Hora da Reunião</label>
+                    <input type="datetime-local" name="reuniao" id="reuniao" class="form-input" />
+
+                </fieldset>
+            </section>
+
+            <!-- Arquivos e Cores -->
+            <section class="form-section">
+                <fieldset class="form-group">
+                    <legend class="form-group-title">Arquivos e Cores</legend>
+                    <label for="cor-favorita" class="form-label">Cor favorita: </label>
+                    <input type="color" name="cor-favorita" id="cor-favorita" class="form-color-picker" value="#ff0000" />
+
+                    <label for="foto-perfil" class="form-label">Foto de Perfil:</label>
+                    <input type="file" name="foto-perfil" id="foto-perfil" class="form-input" accept="image/png, image/jpeg" />
+
+                </fieldset>
+            </section>
 
             <section class="form-section">
                 <fieldset class="form-group">
+                    <legend class="form-group-title">Controle de Formulários</legend>
+                    <div class="form-controls">
+                        <input type="submit" value="Enviar Formulário" class="form-button submit-button" >
+                        <input type="reset" value="Limpar Tudo" class="form-button reset-button">
+                        <input type="button" value="Botão Genérico" class="form-button action-button" onclick="alert('Botao CLicado')">
+                    </div>
+                    
                 </fieldset>
-            </section>
-
-            <section class="form-section">
-                <fieldset class="form-group">
-                </fieldset>
-            </section>
-
-            <section class="form-section">
-                <fieldset class="form-group">
-                </fieldset>
-            </section>
 
         </form>
 
