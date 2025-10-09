@@ -1,0 +1,16 @@
+{
+  "name": "inputs-html",
+  "version": "1.0.0",
+  "description": "Ultilização de inputs para capturar dados do usuário.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "inputs",
+    "formulário",
+    "html"
+  ],
+  "author": "Miguel",
+  "license": "ISC"
+}
