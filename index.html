@@ -24,6 +24,8 @@
                 </fieldset>
             </section>
 
+
+            <!-- Formulario dados pessoais -->
             <section class="form-section">
                 <fieldset class="form-group">
                     <!-- Legenda para o grupo de itens do formulário -->
@@ -34,8 +36,8 @@
                         required minlength="3" />
 
                     <label for="senha" class="form-label">Senha:</label>
-                    <input type="password" id="nome" name="nome" class="form-input" placeholder="Mínimo de 8 caracteres"
-                        required minlength="8">
+                    <input type="password" id="senha" name="senha" class="form-input"
+                        placeholder="Mínimo de 8 caracteres" required minlength="8">
 
                     <label for="email" class="form-label">E-mail:</label>
                     <input type="email" id="email" name="email" class="form-input" placeholder="exemplo@dominio.com"
@@ -53,10 +55,56 @@
                 </fieldset>
             </section>
 
+            <!-- Opções e seleções -->
             <section class="form-section">
                 <fieldset class="form-group">
+                    <legend class="form-group-title">Opções e seleções</legend>
+                    <label for="area" class="form-label">Qual sua area de atuação?</label>
+                    <select id="area" name="area" class="form-select">
+                        <!-- Opções do select -->
+                        <option value="">Selecione uma opção:</option>
+                        <option value="frontend-option">Front-end</option>
+                        <option value="backend-option">Back-end</option>
+                        <option value="fullstack-option">Full Stack</option>
+                        <option value="devops-option">DevOps</option>
+                    </select>
+
+                    <!-----------------------Opções------------------------>
+                    <p class="check-box">Quais tecnologias você conhece?</p>
+                    <div class="form-check">
+                        <input checked type="checkbox" name="tecnologia" id="HTML" value="html">
+                        <label for="html">HTML</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" name="tecnologia" id="CSS" value="css">
+                        <label for="css">CSS</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" name="tecnologia" id="JS" value="js">
+                        <label for="JS">JS</label>
+                    </div>
+
+
+                    <p class="check-box"> Qual seu nivel de experiencia?</p>
+
+                    <div class="formcheck">
+                        <input type="radio" name="experiencia" id="Iniciante">
+                        <label for="Iniciante">Iniciante</label>
+                    </div>
+
+                    <div class="formcheck">
+                        <input type="radio" name="experiencia" id="Intermediario">
+                        <label for="Intermediario">Intermediário</label>
+                    </div>
+
+                    <div class="formcheck">
+                        <input type="radio" name="experiencia" id="Avancado">
+                        <label for="Avancado">Avançado</label>
+                    </div>
+
                 </fieldset>
             </section>
+
 
             <section class="form-section">
                 <fieldset class="form-group">
